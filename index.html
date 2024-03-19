@@ -2,172 +2,188 @@
 <html lang="en">
 
 <head>
+    <!-- Metadatos de la página -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importación de jQuery y FontAwesome -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7f4660a407.js" crossorigin="anonymous"></script>
+
+    <!-- Icono de la pestaña -->
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png">
+
+    <!-- Estilos de Bootstrap y de animación -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Título de la página -->
     <title>Portafolio</title>
 </head>
 
 <body class="bg-dark">
+<!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <h2 class="animate__animated animate__fadeInRightBig animate__slow"><Strong>Billy John Alvarez</Strong>
-                </h2>
-            </a>
-        </div>
-    </nav>
-
-    <header id="Hero-Section" class="text-light text-end py-5 ">
-        <div class="container">
-            <div class="ms-auto col-12 col-md-7 ">
-                <h1 class="display-1 fw-bold my-5 animate__animated animate__fadeInLeftBig animate__slower">
-                    Acerca de mi
-                </h1>
-                <p class="my-5 animate__animated animate__zoomIn animate__slower">
-                    Titulado de la Carrera Programación Computacional, Actualmente trabajando como System Engineer
-                    en empresa Indra Sistemas S.A, Estoy perfeccionando mis conocimientos
-                    en tecnologías : Java para el Back-end y servicios Spring Boot, Angular, HTML,
-                    Bootstrap ,css, etc, para Front-end.
-                </p>
-                <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-info text-light me-4">Trabajos</button>
-                    <button class="btn btn-lg btn-outline-info text-light me-4">Contacto</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="text-center mt-4 bg-dark ">
-        <h1><strong>Proyectos Realizados</strong></h1>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <!-- Título del sitio -->
+            <h2 class="animate__animated animate__fadeInRightBig animate__slow"><Strong>Billy John Alvarez</Strong>
+            </h2>
+        </a>
     </div>
+</nav>
 
-
-    <div class="cards row justify-content-center mb-5 bg-dark">
-        <div class="card text-bg-dark col-6 mt-5 ms-5 me-5 " style="width: 18rem; ">
-            <img src="assets/img/card-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title text-center"> <strong>GITHUB</strong></h4>
-                <div class="text-center text-center"><i class="fa-brands fa-github fa-xl fa-flip"></i></div>
-                <p class="card-text text-center">Utilizacion de sistema de control de versiones Github en portafolio.
-                </p>
-                <a href="https://billyalvarez.github.io/fdsw-github/" target="_blank" class="btn btn-dark">Ver
-                    Trabajo</a>
-                <a href="https://github.com/BillyAlvarez/fdsw-github" target="_blank"
-                    class="btn btn-dark ms-4">GitHub</a>
-            </div>
-        </div>
-        <div class="card col-6 mt-5 ms-5 me-5" style="width: 18rem; ">
-            <img src="assets/img/card-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title text-center"><strong>BOOTSTRAP</strong></h4>
-                <div class="text-center"><i class="fa-brands fa-bootstrap fa-xl fa-bounce"></i></i></div>
-                <p class="card-text text-center">Proyecto realizado utilizando HTML CSS y framework Bootstrap</p>
-                <a href="https://billyalvarez.github.io/PaginaR-Lyeh/" target="_blank" class="btn btn-dark">Ver
-                    Trabajo</a>
-                <a href="https://github.com/BillyAlvarez/PaginaR-Lyeh" target="_blank"
-                    class="btn btn-dark ms-4">GitHub</a>
-            </div>
-        </div>
-        <div class="card col-4 mt-5 ms-5 me-5" style="width: 18rem; ">
-            <img src="assets/img/card-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title text-center"> <strong>HTML</strong></h4>
-                <div class="text-center"><i class="fa-brands fa-html5 fa-xl fa-beat-fade"></i></div>
-                <p class="card-text text-center">Proyecto realizado solamente utilizando 100% Estructura HTML </p>
-                <a href="https://billyalvarez.github.io/desafio-1/" target="_blank" class="btn btn-dark">Ver Trabajo</a>
-                <a href="https://github.com/BillyAlvarez/desafio-1" target="_blank" class="btn btn-dark ms-4">GitHub</a>
-            </div>
-        </div>
-        <div class="card col-4 mt-5 ms-5 me-5" style="width: 18rem; ">
-            <img src="assets/img/card-4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title text-center"><strong> HTML + CSS</strong></h4>
-                <div class="text-center"><i class="fa-brands fa-html5 fa-xl fa-beat-fade"></i> <strong>+</strong> <i
-                        class="fa-brands fa-css3-alt fa-xl fa-shake"></i></div>
-                <p class="card-text text-center">Para este trabajo se utiliza HTML para la estructura y CSS para los
-                    estilos</p>
-                <a href="https://billyalvarez.github.io/Landing-Page/" target="_blank" class="btn btn-dark">Ver
-                    Trabajo</a>
-                <a href="https://github.com/BillyAlvarez/Landing-Page" target="_blank"
-                    class="btn btn-dark ms-4">GitHub</a>
-            </div>
-        </div>
-        <div class="card col-4 mt-5 ms-5 me-5" style="width: 18rem; ">
-            <img src="assets/img/card-5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title text-center"> <strong>CSS</strong> </h4>
-                <div class="text-center"><i class="fa-brands fa-css3-alt fa-xl fa-shake"></i></div>
-                <p class="card-text text-center">Trabajo Utilizando Pocisionamiento a travez de CSS</p>
-                <a href="https://billyalvarez.github.io/Iguana-page/" target="_blank" class="btn btn-dark">Ver
-                    Trabajo</a>
-                <a href="https://github.com/BillyAlvarez/Iguana-page" target="_blank"
-                    class="btn btn-dark ms-4">GitHub</a>
+<!-- Encabezado -->
+<header id="Hero-Section" class="text-light text-end py-5">
+    <div class="container">
+        <div class="ms-auto col-12 col-md-7">
+            <!-- Título principal -->
+            <h1 class="display-1 fw-bold my-5 animate__animated animate__fadeInLeftBig animate__slower">
+                Acerca de mi
+            </h1>
+            <!-- Descripción -->
+            <p class="my-5 animate__animated animate__zoomIn animate__slower">
+                Soy Licenciado en Programación Computacional y he desempeñado el rol de Analista de Sistemas durante un
+                tiempo considerable. Durante este período, me especialicé en el análisis y desarrollo de soluciones
+                informáticas utilizando tecnologías como Java para el backend, Spring Boot para la creación de
+                servicios, y Angular junto con Bootstrap para el frontend. Mi experiencia incluye la participación en
+                proyectos de desarrollo de aplicaciones web, con un enfoque en el sector de gestión financiera. Estoy
+                comprometido con el aprendizaje continuo y estoy abierto a asumir roles que me permitan seguir creciendo
+                profesionalmente.
+            </p>
+            <!-- Botones de acción -->
+            <div class="mb-5 pb-5">
+                <button class="btn btn-lg btn-outline-info text-light me-4">Trabajos</button>
+                <button class="btn btn-lg btn-outline-info text-light me-4">Contacto</button>
             </div>
         </div>
     </div>
+</header>
 
+<!-- Sección de proyectos -->
+<div class="text-center mt-4 bg-dark">
+    <h1><strong>Proyectos Realizados</strong></h1>
+</div>
 
+<!-- Cartas de proyectos -->
+<div class="cards row justify-content-center mb-5 bg-dark">
+    <!-- Tarjeta 1 -->
+    <div class="card text-bg-dark col-6 mt-5 ms-5 me-5" style="width: 18rem;">
+        <img src="assets/img/card-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title text-center"><strong>GITHUB</strong></h4>
+            <div class="text-center text-center"><i class="fa-brands fa-github fa-xl fa-flip"></i></div>
+            <p class="card-text text-center">Utilización de sistema de control de versiones Github en portafolio.
+            </p>
+            <a href="https://billyalvarez.github.io/fdsw-github/" target="_blank" class="btn btn-dark">Ver
+                Trabajo</a>
+            <a href="https://github.com/BillyAlvarez/fdsw-github" target="_blank"
+               class="btn btn-dark ms-4">GitHub</a>
+        </div>
+    </div>
+    <!-- Tarjeta 2 -->
+    <div class="card col-6 mt-5 ms-5 me-5" style="width: 18rem;">
+        <img src="assets/img/card-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title text-center"><strong>BOOTSTRAP</strong></h4>
+            <div class="text-center"><i class="fa-brands fa-bootstrap fa-xl fa-bounce"></i></i></div>
+            <p class="card-text text-center">Proyecto realizado utilizando HTML CSS y framework Bootstrap</p>
+            <a href="https://billyalvarez.github.io/PaginaR-Lyeh/" target="_blank" class="btn btn-dark">Ver
+                Trabajo</a>
+            <a href="https://github.com/BillyAlvarez/PaginaR-Lyeh" target="_blank"
+               class="btn btn-dark ms-4">GitHub</a>
+        </div>
+    </div>
+    <!-- Tarjeta 3 -->
+    <div class="card col-4 mt-5 ms-5 me-5" style="width: 18rem;">
+        <img src="assets/img/card-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title text-center"><strong>JAVASCRIPT</strong></h4>
+            <div class="text-center"><i class="fa-brands fa-js fa-xl fa-beat-fade"></i></div>
+            <p class="card-text text-center">Proyecto realizado con lenguaje Javascript y manipulacion del DOM </p>
+            <a href="https://billyalvarez.github.io/BlackJack/" target="_blank" class="btn btn-dark">Ver Trabajo</a>
+            <a href="https://github.com/BillyAlvarez/BlackJack" target="_blank" class="btn btn-dark ms-4">GitHub</a>
+        </div>
+    </div>
+    <!-- Tarjeta 4 -->
+    <div class="card col-4 mt-5 ms-5 me-5" style="width: 18rem;">
+        <img src="assets/img/card-4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title text-center"><strong> HTML + CSS</strong></h4>
+            <div class="text-center"><i class="fa-brands fa-html5 fa-xl fa-beat-fade"></i> <strong>+</strong> <i
+                    class="fa-brands fa-css3-alt fa-xl fa-shake"></i></div>
+            <p class="card-text text-center">Para este trabajo se utiliza HTML para la estructura y CSS para los
+                estilos</p>
+            <a href="https://billyalvarez.github.io/Landing-Page/" target="_blank" class="btn btn-dark">Ver
+                Trabajo</a>
+            <a href="https://github.com/BillyAlvarez/Landing-Page" target="_blank"
+               class="btn btn-dark ms-4">GitHub</a>
+        </div>
+    </div>
+    <!-- Tarjeta 5 -->
+    <div class="card col-4 mt-5 ms-5 me-5" style="width: 18rem;">
+        <img src="assets/img/card-5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title text-center"><strong>CSS</strong></h4>
+            <div class="text-center"><i class="fa-brands fa-css3-alt fa-xl fa-shake"></i></div>
+            <p class="card-text text-center">Trabajo Utilizando Posicionamiento a través de CSS</p>
+            <a href="https://billyalvarez.github.io/Iguana-page/" target="_blank" class="btn btn-dark">Ver
+                Trabajo</a>
+            <a href="https://github.com/BillyAlvarez/Iguana-page" target="_blank"
+               class="btn btn-dark ms-4">GitHub</a>
+        </div>
+    </div>
+</div>
 
-    <script type='text/javascript'>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#scroll').fadeIn();
-                } else {
-                    $('#scroll').fadeOut();
-                }
-            });
-            $('#scroll').click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
+<!-- Script para el botón de scroll -->
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
         });
-    </script>
+        $('#scroll').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    });
+</script>
 
-    <a href="javascript:void(0);" id="scroll" title="Ir Arriba" style="display: none;">Ir Arriba<span></span></a>
+<!-- Botón de scroll -->
+<a href="javascript:void(0);" id="scroll" title="Ir Arriba" style="display: none;">Ir Arriba<span></span></a>
 
-    <footer class="bg-dark text-center text-white">
-
-        <div class="container p-4 pb-0">
-
-            <section class="mb-4">
-
-                <a class="btn btn-outline-light btn-floating m-1" href="mailto:billyjag1@gmail.com" target="_blank"
-                    role="button"><i class="fab fa-google"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1"
-                    href="https://api.whatsapp.com/send?phone=+56985772801&text=Hola!" target="_blank" role="button"><i
-                        class="fab fa-whatsapp"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/billy-alvarez/"
-                    target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/BillyAlvarez" target="_blank"
-                    role="button"><i class="fab fa-github"></i></a>
-            </section>
-
-        </div>
-
-
-
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright:
-            <a class="text-white" href="#">Billy Alvarez</a>
-        </div>
-
-    </footer>
-
+<!-- Pie de página -->
+<footer class="bg-dark text-center text-white">
+    <!-- Contenedor -->
+    <div class="container p-4 pb-0">
+        <!-- Sección de redes sociales -->
+        <section class="mb-4">
+            <!-- Botones de redes sociales -->
+            <a class="btn btn-outline-light btn-floating m-1" href="mailto:billyjag1@gmail.com" target="_blank"
+               role="button"><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="https://api.whatsapp.com/send?phone=+56985772801&text=Hola!" target="_blank" role="button"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/billy-alvarez/"
+               target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/BillyAlvarez" target="_blank"
+               role="button"><i class="fab fa-github"></i></a>
+        </section>
+    </div>
+    <!-- Derechos de autor -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="#">Billy Alvarez</a>
+    </div>
+</footer>
 
 </body>
 
