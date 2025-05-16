@@ -19,6 +19,8 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <script src="assets/js/scripts.js" defer></script>
+
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -65,15 +67,15 @@
             </p>
             <!-- Botones de acción -->
             <div class="mb-5 pb-5">
-                <button class="btn btn-lg btn-outline-info text-light me-4">Trabajos</button>
-                <button class="btn btn-lg btn-outline-info text-light me-4">Contacto</button>
+                <a href="#proyectos" class="btn btn-lg btn-outline-info text-light me-4">Trabajos</a>
+                <a href="#contacto" class="btn btn-lg btn-outline-info text-light me-4">Contacto</a>
             </div>
         </div>
     </div>
 </header>
 
 <!-- Sección de proyectos -->
-<div class="text-center mt-4 bg-dark">
+<div id="proyectos" class="text-center mt-4 bg-dark">
     <h1><strong>Proyectos Realizados </strong> <small><small>
         <mark>actualizando...</mark>
     </small></small></h1>
@@ -182,6 +184,99 @@
 
 </div>
 
+<!-- Formulario de contacto -->
+<div id="contacto" class="container d-flex justify-content-center mt-5 mb-5">
+    <div class="card bg-secondary text-light shadow" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-4">Contáctame</h2>
+
+            <form action="#" method="post">
+                <!-- Nombre Completo -->
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-dark text-light border-0"
+                           placeholder="Nombre Completo" required
+                           pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]+$"
+                           title="Solo letras y espacios" value="">
+                </div>
+
+                <!-- RUN -->
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-dark text-light border-0"
+                           placeholder="Rol Único Nacional ( Chile )"
+                           pattern="[0-9]{7,8}-?[0-9Kk]{1}"
+                           title="Ingresa un RUN válido (sin puntos y con guión opcional)"
+                           value="">
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="mb-3">
+                    <input type="email" class="form-control bg-dark text-light border-0"
+                           placeholder="Correo Electrónico" value="">
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-dark text-light border-0"
+                           placeholder="WhatsApp Chile +569" pattern="^\+56\d{9}$"
+                           title="Ingresa un número de WhatsApp chileno válido" value="">
+                </div>
+
+                <!-- Selección de Servicio-->
+                <div class="mb-3">
+                    <select class="form-select bg-dark text-light border-0" required>
+                        <option value="" disabled selected>Selecciona un Servicio</option>
+                        <option value="desarrollo-wordpress">Desarrollo de sitios Web</option>
+                        <option value="tiendas-online">Desarrollo Tiendas Online</option>
+                        <option value="landing-page">Diseño de Landing Pages</option>
+                        <option value="mantenimiento-web">Mantenimiento y soporte de sitios web</option>
+                        <option value="optimizacion-seo">Optimización SEO básica</option>
+                        <option value="despliegue-servidores">Despliegue en servidores Linux / VPS</option>
+                        <option value="automatizacion">Automatización con scripts y Google Apps Script</option>
+                        <option value="asesoria-tecnica">Asesoría técnica / Consultoría</option>
+                        <option value="asesoria-tecnica">Otros</option>
+                    </select>
+                </div>
+
+                <!-- Textarea con contador -->
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label text-light">Describe tu requerimiento</label>
+                    <textarea
+                            class="form-control bg-dark text-light border-0"
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            maxlength="2000"
+                            placeholder="Cuéntame qué necesitas, con el mayor detalle posible..."
+                            required
+                            oninput="actualizarContador()"
+                    ></textarea>
+                    <div class="form-text text-light">
+                        Caracteres restantes: <span id="contador">2000</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="form-check mb-4">
+                    <input class="form-check-input bg-dark border-light" type="checkbox" id="promos" checked>
+                    <label class="form-check-label text-light" for="promos">
+                        Acepto recibir promociones y novedades
+                    </label>
+                </div>
+
+                <!-- Botón -->
+                <div class="mb-3">
+                    <button type="submit" id="btn-enviar" class="btn btn-outline-light w-100 fw-bold" disabled>Enviar</button>
+                </div>
+
+                <!-- Contenedor para la alerta -->
+                <div id="alerta-exito" class="alert alert-success fade" role="alert" style="display:none;">
+                    ¡Formulario enviado correctamente!
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- Script para el botón de scroll -->
 <script type='text/javascript'>
@@ -228,6 +323,18 @@
     </div>
 </footer>
 
-</body>
+<!-- Script para scroll suave -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
 
+</body>
 </html>
