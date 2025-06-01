@@ -43,7 +43,7 @@ const formSubmitted = () => {
 
     // Redireccionar (opcional)
     setTimeout(() => {
-        window.location.href = '/';
+        window.location.href = '/Portafolio/';
     }, 6000);
 };
 
