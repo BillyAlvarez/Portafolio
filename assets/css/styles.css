@@ -55,3 +55,71 @@ body {
 p{
   font-size: 20px;
 }
+
+/* Estilo general de las tarjetas */
+.card-custom {
+  width: 18rem;
+  background: linear-gradient(145deg, #1f1f1f, #2c2c2c);
+  border: 1px solid #444;
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para los íconos por tecnología */
+.icon-html {
+  color: #e34c26;
+}
+
+.icon-js {
+  color: #f7df1e;
+}
+
+.icon-css {
+  color: #264de4;
+}
+
+.icon-bootstrap {
+  color: #7952b3;
+}
+
+.icon-apps {
+  color: #4285f4;
+}
+
+.icon-sheets {
+  color: #0f9d58;
+}
+
+.icon-pdf {
+  color: #d32f2f;
+}
+
+.icon-wp {
+  color: #21759b;
+}
+
+.icon-linux {
+  color: #FCC624;
+}
+
+.icon-terminal {
+  color: #4CAF50;
+}
+
+/* Ajuste para imágenes en las tarjetas */
+.card-img-fixed {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Zoom suave en imagen al hacer hover */
+.card-img-hover {
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover .card-img-hover {
+  transform: scale(1.08);
+}
